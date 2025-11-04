@@ -27,15 +27,15 @@ const projects = [
     },
     {
         id: 2,
-        label: "Counter",
-        to:"resume/pages/Counter/index.html",
-        image:'assets/images/counter.jpg',
+        label: "Slide",
+        to:"resume/pages/slide/index.html",
+        image:'assets/images/slide.png',
     },
     {
         id: 3,
         label: "Counter",
-        to:"resume/pages/Counter/index.html",
-        image:'assets/images/counter.jpg',
+        to:"resume/pages/trafficlight/index.html",
+        image:'assets/images/trafficlight.png',
     },
     {
         id: 4,
