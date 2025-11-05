@@ -39,9 +39,9 @@ const projects = [
     },
     {
         id: 4,
-        label: "Counter",
-        to:"resume/pages/Counter/index.html",
-        image:'assets/images/counter.jpg',
+        label: "ToDo List",
+        to:"resume/pages/todo/index.html",
+        image:'assets/images/todo.png',
     },
     {
         id: 5,

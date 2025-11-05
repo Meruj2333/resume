@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Todo List CRUD</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<div class="container py-5">
+    <h3 class="text-center mb-4">Todo List</h3>
+    <div id="todoForm" class="mb-4">
+        <div class="row g-2">
+            <div class="col-md-7">
+                <input type="text" class="form-control" id="todoText" placeholder="Enter task..." required>
+            </div>
+            <div class="col-md-3">
+                <select class="form-select" id="todoStatus">
+                    <option value="Pending">Pending</option>
+                    <option value="In Progress">In Progress</option>
+                    <option value="Completed">Completed</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-primary w-100" id="save">Add</button>
+            </div>
+        </div>
+    </div>
+
+    <ul class="list-group" id="todoList"></ul>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
