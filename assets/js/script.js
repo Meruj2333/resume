@@ -1,4 +1,6 @@
 const $=s=>document.querySelector(s)
+const $$ = selector => document.querySelectorAll(selector);
+
 const btn = document.querySelector('#dark-toggle');
 const body = document.body;
 if (localStorage.getItem('theme') === 'dark') {
@@ -34,7 +36,7 @@ const projects = [
     },
     {
         id: 3,
-        label: "Counter",
+        label: "Traffic-light",
         to:"resume/pages/trafficlight/index.html",
         image:'assets/images/trafficlight.png',
     },
@@ -98,7 +100,10 @@ function applyLanguage(lang) {
         $('.about p').textContent = "Բարև, ես Մերուժն եմ՝ տեխնոլոգիաների սիրահար և ծրագրավորման ուսանող։ Նպատակ ունեմ դառնալ front-end ծրագրավորող և ստեղծել հետաքրքիր կայքեր։";
         $('.skills h2').textContent = "հմռություններ";
         $('.projects h2').textContent = "Իմ կայքերը";
-        $('.project-card a').textContent = "Դիտել կայքը";
+        document.querySelectorAll('.project-card a').forEach(a => {
+            a.textContent = "Դիտել կայքը";
+        });
+
 
 
     } else if (lang === "en") {
@@ -108,8 +113,9 @@ function applyLanguage(lang) {
         $('.about p').textContent = "Hello, I am Meruzh, a technology enthusiast and programming student. My goal is to become a front-end developer and create interesting websites.";
         $('.skills h2').textContent = "skills";
         $('.projects h2').textContent = "My pages";
-        $('.project-card a').textContent = "View my pages";
-
+        document.querySelectorAll('.project-card a').forEach(a => {
+            a.textContent = "View my pages";
+        });
 
 
     } else if (lang === "ru") {
@@ -119,8 +125,9 @@ function applyLanguage(lang) {
         $('.about p').textContent = "Привет, я Меруж, увлечён технологиями и изучаю программирование. Моя цель — стать front-end разработчиком и создавать интересные сайты.";
         $('.skills h2').textContent = "Навыки";
         $('.projects h2').textContent = "мои проекты";
-        $('.project-card a').textContent = "Посмотреть сайт";
-
+        document.querySelectorAll('.project-card a').forEach(a => {
+            a.textContent = "Посмотреть сайт";
+        });
 
     }
 }
