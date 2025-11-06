@@ -1,3 +1,4 @@
+const $=s=>document.querySelector(s)
 const btn = document.querySelector('#dark-toggle');
 const body = document.body;
 if (localStorage.getItem('theme') === 'dark') {
@@ -45,9 +46,9 @@ const projects = [
     },
     {
         id: 5,
-        label: "Counter",
-        to:"resume/pages/Counter/index.html",
-        image:'assets/images/counter.jpg',
+        label: "Registration",
+        to:"resume/pages/registration/index.html",
+        image:'assets/images/registration.png',
     },
     {
         id: 6,
@@ -56,7 +57,6 @@ const projects = [
         image:'assets/images/counter.jpg',
     },
 ]
-const $=s=>document.querySelector(s)
 projects.forEach((res)=>{
     $('#projects').innerHTML+=` <div class="project-card">
  \n<img src="${res.image}" alt="Portfolio Project" class="project-img">
@@ -65,3 +65,74 @@ projects.forEach((res)=>{
  \n</div>\n`
 })
 
+const langSelect = $('#lang-select');
+
+langSelect.addEventListener('change', function change(event) {
+    const value = event.target.value;
+    if (value === "hy") {
+        $('header h1').textContent = "Meruzh Harutyunyan";
+        $('header p').textContent = "HTML / CSS / JavaScript ուսանող | ապագա ծրագրավորող";
+        $('.about h2').textContent="Իմ մասին"
+        $('.about p ').textContent="Բարև, ես Մերուժն եմ՝ տեխնոլոգիաների սիրահար և ծրագրավորման ուսանող։ Նպատակ ունեմ դառնալ front-end ծրագրավորող և ստեղծել հետաքրքիր կայքեր։"
+
+
+    } else if (value === "en") {
+        $('header h1').textContent = "Meruzh Harutyunyan";
+        $('header p').textContent = "HTML / CSS / JavaScript student | future developer";
+        $('.about h2').textContent="About Me"
+        $('.about p ').textContent="Hello, I am Meruzh, a technology enthusiast and programming student. My goal is to become a front-end developer and create interesting websites."
+
+    } else if (value === "ru") {
+       $('header h1').textContent = "Meruzh Harutyunyan";
+        $('header p').textContent = "HTML / CSS / JavaScript студент | будущий разработчик";
+        $('.about h2').textContent="Обо мне"
+        $('.about p ').textContent="Привет, я Меруж, увлечён технологиями и изучаю программирование. Моя цель — стать front-end разработчиком и создавать интересные сайты."
+
+    }
+});
+function applyLanguage(lang) {
+    if (lang === "hy") {
+        $('header h1').textContent = "Meruzh Harutyunyan";
+        $('header p').textContent = "HTML / CSS / JavaScript ուսանող | ապագա ծրագրավորող";
+        $('.about h2').textContent = "Իմ մասին";
+        $('.about p').textContent = "Բարև, ես Մերուժն եմ՝ տեխնոլոգիաների սիրահար և ծրագրավորման ուսանող։ Նպատակ ունեմ դառնալ front-end ծրագրավորող և ստեղծել հետաքրքիր կայքեր։";
+        $('.skills h2').textContent = "հմռություններ";
+        $('.projects h2').textContent = "Իմ կայքերը";
+        $('.project-card a').textContent = "Դիտել կայքը";
+
+
+    } else if (lang === "en") {
+        $('header h1').textContent = "Meruzh Harutyunyan";
+        $('header p').textContent = "HTML / CSS / JavaScript student | future developer";
+        $('.about h2').textContent = "About Me";
+        $('.about p').textContent = "Hello, I am Meruzh, a technology enthusiast and programming student. My goal is to become a front-end developer and create interesting websites.";
+        $('.skills h2').textContent = "skills";
+        $('.projects h2').textContent = "My pages";
+        $('.project-card a').textContent = "View my pages";
+
+
+
+    } else if (lang === "ru") {
+        $('header h1').textContent = "Meruzh Harutyunyan";
+        $('header p').textContent = "HTML / CSS / JavaScript студент | будущий разработчик";
+        $('.about h2').textContent = "Обо мне";
+        $('.about p').textContent = "Привет, я Меруж, увлечён технологиями и изучаю программирование. Моя цель — стать front-end разработчиком и создавать интересные сайты.";
+        $('.skills h2').textContent = "Навыки";
+        $('.projects h2').textContent = "мои проекты";
+        $('.project-card a').textContent = "Посмотреть сайт";
+
+
+    }
+}
+
+langSelect.addEventListener('change', function(event) {
+    const value = event.target.value;
+    localStorage.setItem('language', value);
+    applyLanguage(value);
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const savedLang = localStorage.getItem('language') || 'hy';
+    langSelect.value = savedLang;
+    applyLanguage(savedLang);
+});
