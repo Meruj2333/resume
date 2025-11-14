@@ -54,9 +54,9 @@ const projects = [
     },
     {
         id: 6,
-        label: "Counter",
-        to:"resume/pages/Counter/index.html",
-        image:'assets/images/counter.jpg',
+        label: "box-shadow",
+        to:"resume/pages/box-shadow/index.html",
+        image:'assets/images/boxshadow.png',
     },
 ]
 projects.forEach((res)=>{
