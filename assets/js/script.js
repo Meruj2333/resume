@@ -58,6 +58,12 @@ const projects = [
         to:"resume/pages/box-shadow/index.html",
         image:'assets/images/boxshadow.png',
     },
+    {
+    id: 7,
+    label: "tasks",
+    to:"resume/pages/tasks/index.html",
+    image:'assets/images/tasks.png',
+},
 ]
 projects.forEach((res)=>{
     $('#projects').innerHTML+=` <div class="project-card">
