@@ -73,10 +73,10 @@ const projects = [
 },
     {
         id: 8,
-        label: "tasks",
+        label: "epixelab",
         to:"resume/htmlpages/epixelab/index.html",
-        image:'assets/images/tasks.png',
-        type: "js",
+        image:'htmlpages/epixelab/img/screan.png',
+        type: "htmlcss",
     },
 ]
 projects.forEach((res)=>{
