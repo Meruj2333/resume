@@ -27,51 +27,68 @@ const projects = [
         label: "Counter",
         to:"resume/pages/Counter/index.html",
         image:'assets/images/counter.jpg',
+        type: "js",
     },
     {
         id: 2,
         label: "Slide",
         to:"resume/pages/slide/index.html",
         image:'assets/images/slide.png',
+        type: "js",
     },
     {
         id: 3,
         label: "Traffic-light",
         to:"resume/pages/trafficlight/index.html",
         image:'assets/images/trafficlight.png',
+        type: "js",
     },
     {
         id: 4,
         label: "ToDo List",
         to:"resume/pages/todo/index.html",
         image:'assets/images/todo.png',
+        type: "js",
     },
     {
         id: 5,
         label: "Registration",
         to:"resume/pages/registration/index.html",
         image:'assets/images/registration.png',
+        type: "js",
     },
     {
         id: 6,
         label: "box-shadow",
         to:"resume/pages/box-shadow/index.html",
         image:'assets/images/boxshadow.png',
+        type: "js",
     },
     {
     id: 7,
     label: "tasks",
     to:"resume/pages/tasks/index.html",
     image:'assets/images/tasks.png',
+        type: "js",
 },
+    {
+        id: 8,
+        label: "tasks",
+        to:"resume/htmlpages/epixelab/index.html",
+        image:'assets/images/tasks.png',
+        type: "js",
+    },
 ]
 projects.forEach((res)=>{
-    $('#projects').innerHTML+=` <div class="project-card">
- \n<img src="${res.image}" alt="Portfolio Project" class="project-img">
- \n<h3>${res.label}</h3>
- \n<a href="/${res.to}"target="_blank">Դիտել կայքը</a>
- \n</div>\n`
+    $('#projects').innerHTML+=` 
+    <div class="project-card" data-type="${res.type}">
+        <img src="${res.image}" alt="Portfolio Project" class="project-img">
+        <h3>${res.label}</h3>
+        <a href="/${res.to}" target="_blank">Դիտել կայքը</a>
+    </div>
+    `
 })
+
 
 const langSelect = $('#lang-select');
 
@@ -148,4 +165,27 @@ document.addEventListener('DOMContentLoaded', function() {
     const savedLang = localStorage.getItem('language') || 'hy';
     langSelect.value = savedLang;
     applyLanguage(savedLang);
+});
+const filterButtons = document.querySelectorAll(".project-filters button");
+
+filterButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+
+        // Highlight active button
+        filterButtons.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+
+        const filter = btn.getAttribute("data-filter");
+        const cards = document.querySelectorAll(".project-card");
+
+        cards.forEach(card => {
+            const type = card.getAttribute("data-type");
+
+            if (filter === "all" || filter === type) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+        });
+    });
 });
