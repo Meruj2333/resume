@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container-md {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container-mdplus {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+
+.container-sm {
+}
+
+.container-lg {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-padding {
+    padding: 20px 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.title {
+    color: #359756;
+    font-size: 50px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.wd-50 {
+    width: 50%;
+}
+
+.wd-45 {
+    width: 45%;
+}
+
+.wd-100 {
+    width: 100%;
+}
+
+.wd-40 {
+    width: 40%;
+}
+
+.wd-30 {
+    width: 30%;
+}
+
+.wd-60 {
+    width: 60%;
+}
+
+.wd-39 {
+    width: 39%;
+}
+
+.wd-90 {
+    width: 90%;
+}
+
+.wd-35 {
+    width: 35%;
+}
+.row-gap-0{
+    gap: 0;
+    justify-content:flex-start;
+}
+.j-content-btw {
+    justify-content: space-between;
+}
+.cont-text{
+    a{
+        text-decoration: none;
+        font-size: 16px;
+    }
+    p{
+        font-size: 16px;
+    }
+}
+
+.bc-grad {
+    background: linear-gradient(180deg, rgb(53, 151, 86) 49%, rgba(255, 255, 255, 1) 50%);;
+
+}
+.j-content-start{
+    justify-content: start;
+}
+
+.pd-100 {
+    padding: 100px;
+}
+
+.pd-30 {
+    padding: 30px;
+}
+
+.mg-auto {
+    margin: auto;
+}
+
+/*.mg-right-100 {*/
+/*    margin-right: 100px;*/
+/*}*/
+
+.mg-right-50 {
+    margin-right: 50px;
+}
+
+.mg-bt-50 {
+    margin: 50px 0;
+}
+
+.mg-30-auto {
+    margin: 30px auto;
+}
+
+.fz-20 {
+    font-size: 20px;
+}
+
+.fz-16 {
+    font-size: 16px;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.l-heigth-35 {
+    line-height: 35px;
+    margin-bottom: 20px;
+}
+
+.l-heigth-50 {
+    line-height: 50px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.card-icon {
+    img {
+        border-radius: 50%;
+    }
+}
+
+.bg-btn {
+    padding: 17px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.radius-4x10 {
+    border-radius: 10px;
+}
+
+.cl-white {
+    color: #ffffff;
+}
+
+.cl-green {
+    color: #359756;
+}
+
+.cl-black {
+    color: #000000;
+}
+
+.u-icon {
+    fill: #ffffff;
+}
+
+.bc-col-gry {
+    background-color: #e5e5e5;
+}
+
+.bc-col-wht {
+    background-color: #ffffff;
+}
+
+.bc-col-bk {
+    background-color: #000000;
+}
+
+.bc-col-gr {
+    background-color: #359756;
+    color: #ffffff;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.d-block {
+    display: block;
+}
+
+.card-design {
+    width: 22%;
+    background-color: #eeeeee;
+border-radius: 10px;
+    padding: 20px;
+    img {
+        display: block;
+        margin: 0 auto;
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        outline: #359756 solid 6px;
+
+
+    }
+
+    p, h3, h4 {
+        margin: 20px 0;
+        line-height:1.8;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 20px;
+        color: #359756;
+        margin-top: 30px;
+    }
+
+}
+.flex-start{
+    justify-content: flex-start;
+}
+.sec4-p{
+    width: 40%;
+    line-height:2 ;
+}
+.bc-col-gry-grn {
+    background: linear-gradient(180deg, rgba(217, 217, 217, 1) 25%, rgba(53, 151, 86, 1) 25%, rgba(53, 151, 86, 1) 67%, rgba(217, 217, 217, 1) 67%);
+}
+
+.ul-box {
+    width: 25%;
+    li {
+        list-style-type: none;
+
+        span {
+            margin-left: 100px;
+        }
+    }
+
+    .svg {
+        width: 10px;
+
+    }
+}
+
+form {
+    input {
+        padding: 15px;
+        width: 100%;
+        margin: 10px auto;
+background-color: #ececec;
+        border: none;
+    }
+
+    textarea {
+        margin: 10px auto;
+        width: 100%;
+        height: 100px;
+        padding: 10px;
+        background-color: #ececec;
+        border: none;
+    }
+}
+
+.plan-card {
+    width: 30%;
+    padding: 30px;
+
+    h4 {
+        font-size: 20px;
+        margin: 30px auto;
+    }
+
+    h2 {
+        margin: 30px auto;
+    }
+
+    .bg-btn {
+        margin: 30px auto;
+    }
+
+    .plan-p {
+        width: 80%;
+    }
+
+    span {
+        font-size: 20px;
+    }
+}
+
+.card-icon {
+    text-align: center;
+    background-color: #fffdfd;
+    padding: 30px 10px;
+    width: 47%;
+    h3{
+        color: #359756;
+        font-size: 20px;
+    }
+    p{
+        font-style:  italic;
+        line-height:  35px;
+    }
+    a{
+        margin-bottom: 50px;
+    }
+    button {
+        color: #ffffff;
+        background-color: #359756;
+        margin: 30px auto;
+        display: block;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+   .container-mdplus{
+       max-width: 1000px;
+   }
+    .container-lg {
+        max-width: 1000px;
+    }
+    .wd-39{
+        /*width: 100%;*/
+        /*h2,p{*/
+
+        /*    text-align:center;*/
+
+        /*}*/
+        /*.bg-btn {*/
+        /*    display: block;*/
+        /*    margin: 30px auto;*/
+        /*}*/
+    }
+    .card-icon{
+        width: 46%;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .container-lg {
+        max-width: 800px;
+    }
+    .title{
+        font-size: 2.5rem;
+    }
+
+    .wd-39 {
+        width: 100%;
+
+    }
+
+    .row-icon {
+        width: 100%;
+        text-align: center;
+    }
+.card-design{
+    width: 48%;
+}
+.last-image{
+    align-self: center;
+}
+}
+
+@media only screen and (max-width: 760px) {
+   .container-md{
+       max-width: 600px;
+   }
+    .container-mdplus{
+        max-width: 600px;
+        a,p{
+            font-size: 14px;
+        }
+    }
+    .sec4-p{
+       width: 100%;
+    }
+
+    .container-lg {
+        max-width: 600px;
+
+        .wd-35 {
+            width: 80%;
+        }
+
+        .card-icon {
+            width: 100%;
+        }
+    }
+
+    .plan-card,.wd-39, .wd-40, .wd-30, .wd-45, .wd-50, .card-design, .cont-text, .ul-box {
+        width: 100%;
+    }
+    .contact-inf{
+        /*width: 100%;*/
+        margin:  auto;
+    }
+    .title {
+        font-size: 2.25rem;
+    }
+}

@@ -81,8 +81,29 @@ const projects = [
     {
         id: 9,
         label: "delivery",
-        to:"resume/htmlpages/delivery/index.html",
+        to:"resume/htmlpages/delivery-page/index.html",
         image:'htmlpages/delivery-page/img/delivery.png',
+        type: "htmlcss",
+    },
+    {
+        id: 10,
+        label: "delivery",
+        to:"resume/htmlpages/lessons/index.html",
+        image:'htmlpages/lessons/img/lessons.png',
+        type: "htmlcss",
+    },
+    {
+        id: 11,
+        label: "static",
+        to:"resume/htmlpages/static/index.html",
+        image:'htmlpages/static/img/static.png',
+        type: "htmlcss",
+    },
+    {
+        id: 12,
+        label: "static",
+        to:"resume/htmlpages/onex/index.html",
+        image:'htmlpages/onex/img/onex.png',
         type: "htmlcss",
     },
 ]
