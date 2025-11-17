@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+}
+
+.section-padding {
+    padding: 30px;
+}
+
+.container-lg {
+    max-width: 1380px;
+    margin: 0 auto;
+    padding:0 10px;
+}
+
+.top-21 {
+    margin: 21px auto;
+}
+
+.wd-40 {
+    width: 40%;
+}
+
+.color-green {
+    color: #56AF58;
+}
+
+.mg-auto {
+    margin: 0 auto
+}
+
+#register {
+
+    display: inline;
+    width: auto;
+    border-radius: 11px;
+    padding: 8px 20px;
+    background-color: #56AF58;
+    color: white;
+    border: none;
+}
+
+.btn-reg {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+
+    label {
+        align-self: center
+    }
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+}
+
+.box-for-img {
+    width: 112px;
+    height: 112px;
+    background-color: #C4C4C4;
+}
+
+.menu-bar {
+    width: 294px;
+    display: flex;
+    justify-content: space-between;
+
+    .menu-tool {
+        font-size: medium;
+        color: black;
+        text-decoration: none;
+    }
+}
+
+.bg-color-grey {
+    /*height: 700px;*/
+    background-color: #EEF2FF;
+}
+
+.box-for-title {
+    width: 49%;
+}
+
+.title {
+    margin-top: 112px;
+    text-align: center;
+    font-size: 100px;
+
+    span {
+        color: #56AF58;
+    }
+}
+
+.btn-more {
+    margin: 66px auto 98px auto;
+    border: none;
+    border-radius: 11px;
+    display: flex;
+    justify-content: space-around;
+    gap: 33px;
+    background-color: #56AF58;
+    color: white;
+    font-size: 30px;
+    padding: 23px 42px;
+}
+
+.girl {
+    align-self: end;
+}
+
+.site-name {
+    margin-top: 162px;
+    font-size: 30px;
+
+    span {
+        color: #56AF58;
+        font-size: 50px;
+        font-weight: bold;
+    }
+}
+
+.bike {
+    margin: 85px 0 117px 0;
+    width: 50%;
+}
+
+.bike-text {
+    align-self: center;
+    width: 45%;
+
+    p {
+        font-size: 12px;
+        line-height: 2.5;
+    }
+}
+
+.row-margin-117 {
+    margin-top: 117px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 41px;
+
+
+    a {
+        align-self: center;
+    }
+}
+
+.margin-top-0 {
+    margin-top: 0
+}
+
+.card {
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.47);
+    width: 30%;
+
+    .post-text {
+        width: 95%;
+        margin: 16px auto 35px auto;
+
+        p {
+            margin: 35px 0 44px 0;
+            font-size: 13px;
+        }
+    }
+
+    .title-post {
+
+        display: flex;
+        justify-content: space-between;
+
+        input {
+            border: none;
+        }
+    }
+
+    img {
+        background-color: #C4C4C4;
+        width: 100%;
+        height: 286px;
+    }
+}
+.fa{
+    font-size: 36px;
+}
+
+.card-contact {
+    i {
+        color: #56AF58;
+        display: block;
+        margin: 0 auto;
+        font-size: 130px;
+
+    }
+
+    i, p {
+        text-align: center;
+    }
+
+    p {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 1385px) {
+    .container-lg {
+        max-width: 1000px;
+    }
+
+    .title {
+        font-size: 70px;
+    }
+
+    .girl {
+        width: 49%;
+    }
+
+    .bike {
+        width: 50%;
+    }
+
+    .wd-40 {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .container-lg {
+        max-width: 770px;
+    }
+
+    .title {
+        font-size: 55px;
+    }
+
+    .bike {
+        width: 90%;
+        margin-bottom: 0;
+
+    }
+
+    .bike-text {
+        width: 100%;
+    }
+
+    .card {
+        width: 48%;
+    }
+
+    .card-contact {
+        i {
+            font-size: 50px;
+        }
+    }
+}
+
+@media only screen and (max-width: 775px) {
+    .container-lg {
+        max-width: 550px;
+    }
+
+    .box-for-title {
+        width: 95%;
+    }
+
+    .girl {
+        width: 90%;
+    }
+
+    .btn-more {
+        font-size: 29px;
+        padding: 12px 12px;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    .site-name {
+        font-size: 15px;
+
+        span {
+            font-size: 30px;
+        }
+
+    }
+
+    .bike {
+        margin-bottom: 0;
+    }
+
+    .card {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .card-contact {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .container-lg {
+        max-width: 370px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card-contact {
+        width: 100%;
+    }
+
+    .box-for-img, .btn-reg {
+        margin: 20px auto;
+    }
+
+    .btn-more {
+        font-size: 15px;
+    }
+
+    .fa {
+        font-size: 20px;
+    }
+    .menu-bar{
+        margin:0 auto;
+    }
+
+}
+

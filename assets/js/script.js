@@ -78,6 +78,13 @@ const projects = [
         image:'htmlpages/epixelab/img/screan.png',
         type: "htmlcss",
     },
+    {
+        id: 9,
+        label: "delivery",
+        to:"resume/htmlpages/delivery/index.html",
+        image:'htmlpages/delivery-page/img/delivery.png',
+        type: "htmlcss",
+    },
 ]
 projects.forEach((res)=>{
     $('#projects').innerHTML+=` 
