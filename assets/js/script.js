@@ -149,8 +149,11 @@ function applyLanguage(lang) {
         $('header p').textContent = "HTML / CSS / JavaScript ուսանող | ապագա ծրագրավորող";
         $('.about h2').textContent = "Իմ մասին";
         $('.about p').textContent = "Բարև, ես Մերուժն եմ՝ տեխնոլոգիաների սիրահար և ծրագրավորման ուսանող։ Նպատակ ունեմ դառնալ front-end ծրագրավորող և ստեղծել հետաքրքիր կայքեր։";
-        $('.skills h2').textContent = "հմռություններ";
+        $('.skills h2').textContent = "հմտություններ";
         $('.projects h2').textContent = "Իմ կայքերը";
+        $('.all').textContent = "ԲՈԼՈՐԸ";
+        $(' h1').textContent = "Մերուժան Հարությունյան";
+
         document.querySelectorAll('.project-card a').forEach(a => {
             a.textContent = "Դիտել կայքը";
         });
@@ -164,6 +167,10 @@ function applyLanguage(lang) {
         $('.about p').textContent = "Hello, I am Meruzh, a technology enthusiast and programming student. My goal is to become a front-end developer and create interesting websites.";
         $('.skills h2').textContent = "skills";
         $('.projects h2').textContent = "My pages";
+        $('.all').textContent = "ALL";
+        $(' h1').textContent = "Meruzhan Harutyunyan";
+
+
         document.querySelectorAll('.project-card a').forEach(a => {
             a.textContent = "View my pages";
         });
@@ -176,6 +183,10 @@ function applyLanguage(lang) {
         $('.about p').textContent = "Привет, я Меруж, увлечён технологиями и изучаю программирование. Моя цель — стать front-end разработчиком и создавать интересные сайты.";
         $('.skills h2').textContent = "Навыки";
         $('.projects h2').textContent = "мои проекты";
+        $('.all').textContent = "ВСЕ";
+        $(' h1').textContent = "Меружан Арутюнян";
+
+
         document.querySelectorAll('.project-card a').forEach(a => {
             a.textContent = "Посмотреть сайт";
         });
@@ -216,4 +227,9 @@ filterButtons.forEach(btn => {
             }
         });
     });
+});
+const img = document.getElementById("portfolioImg");
+
+img.addEventListener("click", () => {
+    img.classList.toggle("zoomed");
 });
